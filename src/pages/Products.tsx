@@ -3,7 +3,6 @@ import products from "@/api/product";
 
 export default function Products() {
 
-
         return (
         <div className="flex flex-col items-center pt-20 h-screen bg-blue-400">
             <div className="flex flex-col items-center justify-center productCard">
