@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
-import { data, Link } from "react-router-dom";
 import {
   Card,
-  CardAction,
-  CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -15,7 +11,6 @@ import type { ProductType } from "@/types/ProductType";
 export default function Products() {
     const [products, setProducts]= useState<ProductType[]>([])
     const [loading, setLoading]= useState(true)
-    const [selectedProduct, setSelectedProduct] = useState<ProductType | null>(null)
 
     useEffect(() => {
         const fetchData = async () => {

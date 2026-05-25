@@ -9,6 +9,7 @@ import { useAuth } from './hooks/useAuth'
 import Login from './pages/Login'
 import PrivateRoute from './lib/PrivateRoute'
 import ThemeToggle from './components/ThemeToggle'
+import Dashboard from './pages/Dashboard'
 
 
 function Header() {
@@ -16,6 +17,11 @@ function Header() {
 
   return (
     <div className='w-full gap-8 p-4 flex justify-center border-gray-800 border-2 border-x-0 dark:bg-gray-800 text-gray-800 dark:text-stone-300'>
+          {token && (
+          <Button asChild variant='outline'>
+            <Link to="/dashboard">Dashboard</Link>
+          </Button>
+          )}
           <Button asChild variant='outline'>
             <Link to="/">Home</Link>
           </Button>
@@ -52,6 +58,11 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/dashboard' element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            }/>
             <Route path='/products' element={
               <PrivateRoute>
                 <Products/>

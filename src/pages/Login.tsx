@@ -16,7 +16,7 @@ export default function Login() {
 
         if (username === "admin" && password === "admin") {
             login("token_test")
-            navigate("/products")
+            navigate("/dashboard")
         } else {
             setErrorMsg("Username or Passowrd is incorrect")
         }
