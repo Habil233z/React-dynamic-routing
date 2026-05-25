@@ -24,14 +24,14 @@ export default function Login() {
 
     return (
         <div className="flex items-center justify-center min-h-screen p-4 text-gray-800 dark:text-stone-300">
-            <form onSubmit={handleLogin} className="w-full max-w-sm bg-white dark:bg-zinc-900 p-6 shadow rounder space-y-4">
+            <form onSubmit={handleLogin} className="w-full max-w-125 bg-white dark:bg-zinc-900 p-6 shadow rounder space-y-4 border-4 border-gray-800">
                 <h1 className="text-2xl font-bold text-center">Login</h1>
                 <div className="">
                     <Label htmlFor="username">Username</Label>
-                    <input
+                    <input className="border-2"
                         id="username"
                         type="text"
-                        placeholder="username"
+                        placeholder="Username"
                         value={username}
                         onChange={(e)=> setUsername(e.target.value)}
                         required
@@ -39,10 +39,10 @@ export default function Login() {
                 </div>
                 <div className="">
                     <Label htmlFor="password">Password</Label>
-                    <input
+                    <input className="border-2"
                         id="password"
                         type="text"
-                        placeholder="password"
+                        placeholder="Password"
                         value={password}
                         onChange={(e)=> setPassword(e.target.value)}
                         required

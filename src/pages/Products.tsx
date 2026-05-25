@@ -41,7 +41,7 @@ export default function Products() {
                                 <CardHeader>
                                     <CardTitle>{product.name.charAt(0).toLocaleUpperCase() + product.name.slice(1)}</CardTitle>
                                     <CardDescription>{product.description.slice(0,100)}</CardDescription>
-                                    <CardDescription>{product.price}</CardDescription>
+                                    <CardDescription className="mt-4">{product.price}</CardDescription>
                                 </CardHeader>
                             </Card>)
                     })}
