@@ -37,9 +37,10 @@ export default function Products() {
                 <div className="grid grid-flow-col grid-rows-3 gap-4">
                     {products.map((product) => {
                         return (
-                            <Card key={product.id} className="h-20 w-50">
+                            <Card key={product.id} className="h-30 w-60">
                                 <CardHeader>
                                     <CardTitle>{product.name.charAt(0).toLocaleUpperCase() + product.name.slice(1)}</CardTitle>
+                                    <CardDescription>{product.description.slice(0,100)}</CardDescription>
                                     <CardDescription>{product.price}</CardDescription>
                                 </CardHeader>
                             </Card>)
