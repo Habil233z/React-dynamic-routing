@@ -15,7 +15,7 @@ function Header() {
   const {token, logout} = useAuth()
 
   return (
-    <div className='w-full gap-8 p-4 flex justify-center border-black border-2 border-x-0 dark:bg-gray-800'>
+    <div className='w-full gap-8 p-4 flex justify-center border-gray-800 border-2 border-x-0 dark:bg-gray-800 text-gray-800 dark:text-stone-300'>
           <Button asChild variant='outline'>
             <Link to="/">Home</Link>
           </Button>

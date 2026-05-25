@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div className="flex flex-col items-center h-screen">
+        <div className="flex flex-col items-center h-screen text-gray-800 dark:text-stone-300">
             <div className="flex flex-col justify-center items-center w-125 mt-25 dark:bg-gray-800 border-solid border-2 border-black p-10">
                 <h1 className="text-4xl font-bold mb-4 p-3">Home</h1>
                 <p>Welcome to ordionary shopping web, currently non-functional</p>
