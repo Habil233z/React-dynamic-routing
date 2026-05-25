@@ -15,17 +15,17 @@ function Header() {
   const {token, logout} = useAuth()
 
   return (
-    <div className='w-full gap-8 p-4 flex justify-center border-b bg-blue-900'>
+    <div className='w-full gap-8 p-4 flex justify-center border-black border-2 border-x-0 dark:bg-gray-800'>
           <Button asChild variant='outline'>
             <Link to="/">Home</Link>
           </Button>
           {token && (
             <>
             <Button asChild variant='outline'>
-              <Link to="/cart">Cart</Link>
+              <Link to="/products">Products</Link>
             </Button>
             <Button asChild variant='outline'>
-              <Link to="/products">Products</Link>
+              <Link to="/cart">Cart</Link>
             </Button>
             </>
           )}
