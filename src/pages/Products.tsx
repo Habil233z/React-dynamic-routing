@@ -42,7 +42,7 @@ export default function Products() {
                 <div className="grid grid-flow-col grid-rows-3 gap-4">
                     {products.map((product) => {
                         return (
-                            <Card key={product.id} className="h-[80px] w-[200px]">
+                            <Card key={product.id} className="h-20 w-50">
                                 <CardHeader>
                                     <CardTitle>{product.name}</CardTitle>
                                     <CardDescription>{product.price}</CardDescription>
