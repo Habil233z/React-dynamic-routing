@@ -39,7 +39,7 @@ export default function Products() {
                         return (
                             <Card key={product.id} className="h-20 w-50">
                                 <CardHeader>
-                                    <CardTitle>{product.name}</CardTitle>
+                                    <CardTitle>{product.name.charAt(0).toLocaleUpperCase() + product.name.slice(1)}</CardTitle>
                                     <CardDescription>{product.price}</CardDescription>
                                 </CardHeader>
                             </Card>)
